@@ -148,7 +148,9 @@ namespace module_16
                 var connectionStringAccess = new OleDbConnectionStringBuilder()
                 {
                     Provider = "Microsoft.ACE.OLEDB.12.0",
-                    DataSource = @"C:\Users\Saske\Desktop\_C SHARP\Практические работы\Модуль 16\module_16\bin\Debug\AccessDB.accdb"
+                    //DataSource = @"C:\Users\Saske\Desktop\_C SHARP\Практические работы\Модуль 16\module_16\bin\Debug\AccessDB.accdb"
+                    DataSource = @"AccessDB.accdb"
+
                 };
 
                 //ввод логина
