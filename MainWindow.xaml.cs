@@ -27,14 +27,11 @@ namespace module_16
         {
             InitializeComponent();
 
-            
-
+            //начальное состояние кнопок управления данными товаров
             add_product_button.IsEnabled = false;
             delete_product_button.IsEnabled = false;
 
             LocalDB_Connection();
-
-            //AccessDB_Connection();
         }
 
         public void LocalDB_Connection()
@@ -147,10 +144,8 @@ namespace module_16
                 //строка подключения к базе
                 var connectionStringAccess = new OleDbConnectionStringBuilder()
                 {
-                    Provider = "Microsoft.ACE.OLEDB.12.0",
-                    //DataSource = @"C:\Users\Saske\Desktop\_C SHARP\Практические работы\Модуль 16\module_16\bin\Debug\AccessDB.accdb"
+                    Provider = "Microsoft.ACE.OLEDB.12.0",                    
                     DataSource = @"AccessDB.accdb"
-
                 };
 
                 //ввод логина
